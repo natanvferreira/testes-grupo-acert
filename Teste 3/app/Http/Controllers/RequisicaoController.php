@@ -36,13 +36,7 @@ class RequisicaoController extends Controller
             ], 500)->content();
         }
 
-        $token = env("GITHUB_TOKEN");
-        $headers = array(
-            "Accept: application/vnd.github+json",
-            "Authorization: Bearer $token",
-            "X-GitHub-Api-Version: 2022-11-28",
-            "User-Agent: natanvferreira",
-        );
+        $headers = array();
         $curl = curl_init($url);
 
         curl_setopt_array(

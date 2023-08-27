@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', "App\Http\Controllers\HomeController@home");
-Route::post('/getUser', "App\Http\Controllers\HomeController@getUser");
+Route::post('/getCeps', "App\Http\Controllers\HomeController@getCeps");
